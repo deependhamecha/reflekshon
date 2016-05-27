@@ -42,7 +42,7 @@ public class ClassExamples {
         System.out.println(c);
 
 /* If the type is available but there is no instance then it is possible to
-* obtain a Class by appending ".class" to the name of the type.
+*  obtain a Class by appending ".class" to the name of the type.
 */
         // boolean b;
         // c = b.getClass();       // compile-time error
@@ -61,9 +61,9 @@ public class ClassExamples {
         // Output : [[[I
         System.out.println(c);
 
-/*If the fully-qualified name of a class is available,
-*it is possible to get the corresponding Class using the static method Class.forName().
-* This cannot be used for primitive types.
+/* If the fully-qualified name of a class is available,
+*  it is possible to get the corresponding Class using the static method Class.forName().
+*  This cannot be used for primitive types.
 */
         try {
             c = Class.forName("java.lang.Integer");
@@ -164,7 +164,7 @@ public class ClassExamples {
                     // Now, Constructors
 
 /* Using Java Reflection you can inspect the constructors of classes and
-* instantiate objects at runtime. This is done via the Java class java.lang.reflect.Constructor.
+*  instantiate objects at runtime. This is done via the Java class java.lang.reflect.Constructor.
 */
             Constructor[] constructors = String.class.getConstructors();
             for(Constructor constructor : constructors)
